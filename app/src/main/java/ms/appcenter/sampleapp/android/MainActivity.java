@@ -11,11 +11,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.microsoft.appcenter.AppCenter;
-import com.microsoft.appcenter.analytics.Analytics;
-import com.microsoft.appcenter.crashes.Crashes;
-import com.microsoft.appcenter.distribute.Distribute;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
 //        }
 
 
-        if (BuildConfig.DEBUG) {
-            AppCenter.setLogLevel(Log.VERBOSE);
-        }
+//        if (BuildConfig.DEBUG) {
+//            AppCenter.setLogLevel(Log.VERBOSE);
+//        }
 
         // UI Elements
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
